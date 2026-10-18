@@ -1,0 +1,5 @@
+# 本插件的 bundle patch 层。package.json 的 `dsh.bundle.patch` 指向这里，
+# DSH 的 loader 会把这一行合进 profile 的组合树。
+- insert:
+    - id: thinking-slider-liang
+      name: dsh-thinking-slider-liang

@@ -1,0 +1,23 @@
+dsh-thinking-slider-liang
+=========================
+
+本仓库包含的 lib/client.js 是 dsh-thinking-slider 的构建产物副本。
+
+  上游项目 : dsh-thinking-slider
+  上游作者 : MuFeng262
+  上游仓库 : https://github.com/MuFeng262/dsh-thinking-slider
+  上游版本 : 0.3.3
+  上游许可 : MIT
+
+修改说明：
+  lib/client.js 仅有一处改动 —— 在渲染前把 reasoning.efforts 的 name
+  替换为中文显示名（off → 小难梁，low → 梁子，high → 梁圣，max → 梁祖）。
+  档位 id 保持不变，实际发给 API 的参数与上游完全一致。
+
+  lib/index.js 为重新编写的空 Host 半；package.json、cordis.patch.yml、
+  README 与脚本为本仓库原创。
+
+复现方式：scripts/sync-upstream.mjs 从 unpkg 拉取上游产物并注入映射。
+上游若更新，按 README 的步骤重新生成即可。
+
+上游 MIT 许可证全文见 LICENSE——本仓库沿用同一许可证，并保留上游版权归属。
